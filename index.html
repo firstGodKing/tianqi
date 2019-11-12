@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>天气</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+    <div class="weather">
+        <!-- 导航栏 -->
+        <div class="nav">
+            <!-- 手机顶部状态栏预留位置 -->
+            <div class="system-nav"></div>
+            <!-- 城市、搜索框 -->
+            <div class="weather-nav">
+                <!-- 所在城市 -->
+                <div class="fl">
+                    <span class="fl location-icon"></span>
+                    <span class="fl location-city">广州</span>
+                </div>
+                <!-- 搜索框 -->
+                <div class="fl search-box">
+                    <input type="text" class="fl search-ipt" placeholder="输入城市，如：广州">
+                    <span class="fl search-icon"></span>
+                </div>
+            </div>
+            <!-- 城市、搜索框 end-->
+        </div>
+        <!-- 导航栏 end -->
+
+        <!-- 天气 -->
+        <div class="weather-box">
+            <!-- 今日天气 -->
+            <div class="current-weather">
+                <div class="title clearfix">
+                    <!--日期-->
+                    <span class="fl date"></span>
+                    <!--星期-->
+                    <span class="fr week"></span>
+                </div>
+                <div class="tem-box clearfix">
+                    <!--摄氏度-->
+                    <span class="fl tem"></span>
+                    <div class="fl weather-status">
+                        <div class="weather-status-text clearfix">
+                            <!--天气状况-->
+                            <span class="fl qing wea"></span>
+                            <!--空气状况-->
+                            <spna class="fl air_level"></spna>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weather-wind clearfix">
+                    <!--风向-->
+                    <span class="fl wind win"></span>
+                    <!-- 风力 -->
+                    <span class="fl wind win_speed"></span>
+                    <!-- 风速 -->
+                    <span class="fl  win_meter">></span></span>
+                </div>
+            </div>
+            <!-- 今日天气 end -->
+
+            <!-- 24小时实时天气 -->
+            <div class="hours-box">
+                <div class="hours-box-title">24小时天气</div>
+                <div class="hours-weather">
+                    <ul id="hoursWeather" class="clearfix">
+
+                    </ul>
+                </div>
+            </div>
+            <!-- 24小时实时天气 end -->
+
+            <!-- 一周天气 -->
+            <div class="future-weather">
+                <div class="future-weather-title hours-box-title">未来6日天气</div>
+                <div class="future-weather-box">
+                    <ul id="futureWeather">
+
+                    </ul>
+                </div>
+            </div>
+            <!-- 一周天气 end -->
+        </div>
+        <!-- 天气 end -->
+    </div>
+
+
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/rem.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
